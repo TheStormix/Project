@@ -12,7 +12,7 @@ pipeline {
             steps {
                 // Встановлюємо необхідну версію Python та оновлюємо pip
                 sh "pyenv install -s ${PYTHON_VERSION}"
-                sh "pyenv global ${PYTHON_VERSION}"
+                sh "pyenv global ${PYTHOsN_VERSION}"
                 sh 'python -m pip install --upgrade pip'
             }
         }
